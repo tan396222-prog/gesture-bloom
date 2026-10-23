@@ -7,8 +7,8 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="description" content="给莱拉 · 我们在一起的第 120 天。一座只在夜里开花的手势花园。" />
-  <title>给莱拉 · 120 天</title>
+  <meta name="description" content="手势控制绽放 · 送给女朋友的 120 天纪念日礼物。一座只在夜里开花的手势花园。" />
+  <title>手势控制绽放 · 120 天</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23060716'/%3E%3Cpath d='M32 14c6 8 6 16 0 22-6-6-6-14 0-22zM14 32c8-6 16-6 22 0-6 6-14 6-22 0zm36 0c-8 6-16 6-22 0 6-6 14-6 22 0zM32 50c-6-8-6-16 0-22 6 6 6 14 0 22z' fill='%23ff8fb1'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23d7ff3f'/%3E%3C/svg%3E" />
   <!-- 字体：非阻塞加载；Google Fonts 不可用时自动回退到国内镜像 / 系统字体 -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
@@ -50,18 +50,18 @@
     </svg>
 
     <header class="topbar">
-      <div class="brand"><span class="brand-full">NOCTURNE · FOR LAYLA</span><span class="brand-short">FOR LAYLA</span> <em>/ <span data-gift="days">120</span></em></div>
+      <div class="brand"><span class="brand-full">NOCTURNE · FOR YOU</span><span class="brand-short">FOR YOU</span> <em>/ <span data-gift="days">120</span></em></div>
       <div class="status">
-        <button class="heart" id="heartBtn" type="button" aria-label="打开给莱拉的信" title="给莱拉的信（H）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg><span id="heartCount">0/8</span></button>
+        <button class="heart" id="heartBtn" type="button" aria-label="打开给你的信" title="给你的信（H）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg><span id="heartCount">0/8</span></button>
         <span class="pill" id="visionPill"><i class="dot"></i><span id="visionText">VISION OFFLINE</span></span>
         <time id="clock" class="clock">00:00:00</time>
       </div>
     </header>
 
     <section class="hero">
-      <div class="eyebrow"><i></i>A NIGHT GARDEN FOR LAYLA</div>
+      <div class="eyebrow"><i></i>A NIGHT GARDEN FOR YOU</div>
       <h1 class="title"><span class="t1">Bloom</span><span class="t2">after dark.</span></h1>
-      <p class="byline"><b>给<span data-gift="name">莱拉</span> · 第 <span data-gift="days">120</span> 天</b><i aria-hidden="true">·</i><span>张开五指，花为你醒来</span></p>
+      <p class="byline"><b>给你 · 第 <span data-gift="days">120</span> 天</b><i aria-hidden="true">·</i><span>张开五指，花为你醒来</span></p>
     </section>
 
     <nav class="species" id="speciesList" aria-label="花种"></nav>
@@ -85,11 +85,11 @@
     </aside>
 
     <div class="frame-tag" id="frameTag">EASED 4-STAGE BLOOM · FRAME <b id="frameNo">01</b> / 04</div>
-    <div class="coords" aria-hidden="true">DAY <span data-gift="days">120</span> · FOR LAYLA</div>
+    <div class="coords" aria-hidden="true">DAY <span data-gift="days">120</span> · FOR YOU</div>
 
     <!-- 盛放时浮现的一句话 -->
     <div class="love" id="love" aria-live="polite">
-      <div class="love-k"><i></i><span id="loveIdx">01 / 08</span> · FOR LAYLA</div>
+      <div class="love-k"><i></i><span id="loveIdx">01 / 08</span> · FOR YOU</div>
       <p class="love-t" id="loveText"></p>
     </div>
 
@@ -120,13 +120,13 @@
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <div class="hint" id="hint"></div>
 
-    <footer class="foot">FOR 莱拉 · DAY <span data-gift="days">120</span> · WITH LOVE</footer>
+    <footer class="foot">FOR YOU · DAY <span data-gift="days">120</span> · WITH LOVE</footer>
 
     <!-- 启动层 -->
     <div class="start" id="start">
       <div class="start-card">
-        <div class="eyebrow"><i></i>DAY <span data-gift="days">120</span> · FOR LAYLA</div>
-        <h1 class="start-love" id="startLove" aria-label="我爱你，莱拉">我爱你，莱拉</h1>
+        <div class="eyebrow"><i></i>DAY <span data-gift="days">120</span> · FOR YOU</div>
+        <h1 class="start-love" id="startLove" aria-label="我爱你，亲爱的">我爱你，亲爱的</h1>
         <p class="start-sub" id="startSub">我们在一起的第 120 天</p>
         <p class="start-gift">这座只在夜里开花的花园，是送给你的。<br />八朵花，每一朵都替我藏了一句话。</p>
         <ul class="howto">
@@ -142,15 +142,15 @@
       </div>
     </div>
 
-    <!-- 终章：给莱拉的信 -->
+    <!-- 终章：给你的信 -->
     <div class="finale" id="finale" role="dialog" aria-modal="true" aria-labelledby="letterTitle" aria-hidden="true">
       <canvas class="petals" id="petals" aria-hidden="true"></canvas>
       <article class="letter">
         <button class="letter-x" id="finaleClose" type="button" aria-label="关闭">×</button>
-        <div class="eyebrow"><i></i><span id="letterEyebrow">DAY 120 · FOR LAYLA</span></div>
-        <h2 class="letter-title" id="letterTitle">给莱拉</h2>
+        <div class="eyebrow"><i></i><span id="letterEyebrow">DAY 120 · FOR YOU</span></div>
+        <h2 class="letter-title" id="letterTitle">给你</h2>
         <div class="letter-body" id="letterBody"></div>
-        <p class="letter-sign" id="letterSign">爱你的 Tanlayla</p>
+        <p class="letter-sign" id="letterSign">爱你的人</p>
         <div class="letter-actions">
           <button class="btn-ghost" id="finaleBack" type="button">再看一会儿花</button>
         </div>

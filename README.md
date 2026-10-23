@@ -2,11 +2,7 @@
 
 # 🌹 手势控制绽放 · Bloom after dark
 
-### 💌 For Layla（莱拉）· Love you forever, Layla
-
 **张开手，花就开了。**
-
-[![在线体验](https://img.shields.io/badge/在线体验-loveyouforeverlayla.smartai888.com-ff8fb1?style=for-the-badge)](https://loveyouforeverlayla.smartai888.com)
 
 ![three.js](https://img.shields.io/badge/three.js-0.170-000?logo=three.js)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Landmarker-0097A7)
@@ -16,21 +12,19 @@
 
 </div>
 
-这是我给女朋友 **Layla（莱拉）** 做的 **120 天纪念日礼物**：一座只在夜里开花的手势花园。打开摄像头，对着屏幕张开五指，3D 花朵就在夜色里慢慢绽放；握拳，它又合成花苞；挥一挥手，换下一种花。开场是「我爱你，莱拉」，每朵花开到盛放时会浮现一句写给她的话，八朵花都看过之后，会打开一封信，花瓣从屏幕上飘落。
+这是我送给女朋友的 **120 天纪念日礼物**：一座只在夜里开花的手势花园。打开摄像头，对着屏幕张开五指，3D 花朵就在夜色里慢慢绽放；握拳，它又合成花苞；挥一挥手，换下一种花。开场是「我爱你，亲爱的」，每朵花开到盛放时会浮现一句写给她的话，八朵花都看过之后，会打开一封信，花瓣从屏幕上飘落。
 
 代码全部开源，你可以改几行文案，把它变成送给你自己的 TA 的礼物 💌
 
-## ✨ 在线体验
+## ✨ 体验
 
-👉 **https://loveyouforeverlayla.smartai888.com**
-
-手机、电脑都能打开。允许使用摄像头后就能用手势控制；不想开摄像头也可以选「演示模式」或「触控模式」。
+可本地运行或自行部署体验（见下文「本地运行」和「部署」）。手机、电脑都能打开。允许使用摄像头后就能用手势控制；不想开摄像头也可以选「演示模式」或「触控模式」。
 
 ## 📸 截图
 
 | 开场 | 盛放 |
 | :---: | :---: |
-| ![开场：我爱你，莱拉](docs/start.png) | ![花朵盛放时浮现情话](docs/bloom.png) |
+| ![开场：我爱你，亲爱的](docs/start.png) | ![花朵盛放时浮现情话](docs/bloom.png) |
 | **终章：一封信** | **手机竖屏** |
 | ![八朵花都看过之后打开的信](docs/finale.png) | <img src="docs/mobile.png" alt="手机竖屏" width="260"> |
 
@@ -71,11 +65,12 @@
 
 ```js
 export const GIFT = {
-  name: '莱拉',            // TA 的名字
-  nameEn: 'LAYLA',
-  from: 'Tanlayla',        // 落款
+  name: '亲爱的',          // 对 TA 的称呼
+  nameEn: 'YOU',
+  from: '爱你的人',        // 落款
   days: 120,               // 在一起的天数
   startDate: null,         // 例如 '2026-06-26'；填了会按今天自动算天数（第一天算第 1 天），days 就不用了
+  title: '手势控制绽放 · {days} 天',   // 网页标题
   headline: '我爱你，{name}',
   subline: '我们在一起的第 {days} 天',
   lines: { peony: '…', ranunculus: '…', … },   // 8 种花各一句，盛放时浮现
@@ -106,7 +101,7 @@ npx serve -l 8080 .
 
 浏览器只允许在 **HTTPS**（或 `localhost`）页面里调用摄像头。把整个仓库原样上传到任意静态托管即可，入口是 `index.html`。
 
-- **Cloudflare Pages / Vercel / Netlify**：直接上传或关联本仓库。Framework 选 “None / Other”，Build Command 留空，Output Directory 填 `.`（根目录）。在线体验就是用 Cloudflare Pages 部署的
+- **Cloudflare Pages / Vercel / Netlify**：直接上传或关联本仓库。Framework 选 “None / Other”，Build Command 留空，Output Directory 填 `.`（根目录）。作者自己就是用 Cloudflare Pages 部署的
 - **GitHub Pages**：Fork 本仓库后，在 Settings → Pages 里选择 `main` 分支、根目录即可
 - **国内**：腾讯云 COS / 阿里云 OSS 开启静态网站托管，绑定域名并配置 HTTPS 证书（CDN 加速可选）
 - **Nginx**：

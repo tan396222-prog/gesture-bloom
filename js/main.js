@@ -11,7 +11,7 @@
  *                  ?mode=demo | touch  跳过启动层
  *                  ?still=0.8         固定花期（截图 / 海报用）
  *                  ?q=low | high      画质档位
- *                  ?finale=1          直接打开给莱拉的信（测试 / 截图用）
+ *                  ?finale=1          直接打开终章的信（测试 / 截图用）
  *                  ?line=1            强制显示当前花的那句话
  *
  * 礼物文案（名字、天数、八句话、信）都在 js/gift.js 里。
@@ -87,7 +87,7 @@ let pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
 let tracker = null;
 
 const DAYS = giftDays();
-const GIFT_TITLE = `给${GIFT.name} · ${DAYS} 天`;
+const GIFT_TITLE = fill(GIFT.title || '手势控制绽放 · {days} 天');
 const hud = new Hud(SPECIES, { onPick: (i) => { takeOver(); setSpecies(i); }, title: GIFT_TITLE });
 
 /* ------------------------------------------------------------ 礼物：文案、盛放情话、终章 */

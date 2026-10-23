@@ -320,7 +320,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .start-card .eyebrow i { background: #ff8fb1; box-shadow: 0 0 8px #ff8fb1; }
 .start-love {
   margin: 22px 0 0; text-align: center; white-space: nowrap;
-  font: 600 clamp(38px, 11vw, 54px)/1.15 var(--zh); letter-spacing: 0.08em; color: var(--ink);
+  font: 600 clamp(32px, 9.4vw, 54px)/1.15 var(--zh); letter-spacing: 0.08em; color: var(--ink);
   font-synthesis: none; text-shadow: 0 0 28px rgba(255, 143, 177, 0.35);
 }
 .start-love .ch { display: inline-block; opacity: 0; filter: blur(8px); transform: translateY(10px); animation: love-in 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(0.35s + var(--i) * 0.16s); }
