@@ -19,9 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Third-party components bundled in vendor/ and models/ keep their own licenses:
-- three.js (vendor/three/) — MIT License, Copyright © 2010-2024 three.js authors
-- MediaPipe Tasks Vision & Hand Landmarker model (vendor/mediapipe/, models/) — Apache License 2.0, Copyright Google LLC

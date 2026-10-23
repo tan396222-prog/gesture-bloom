@@ -1,0 +1,6 @@
+手势控制绽放 · Bloom after dark
+Copyright (c) 2026 tan396222-prog — MIT License (see LICENSE)
+
+Third-party components bundled in vendor/ and models/ keep their own licenses:
+- three.js (vendor/three/) — MIT License, Copyright © 2010-2024 three.js authors
+- MediaPipe Tasks Vision & Hand Landmarker model (vendor/mediapipe/, models/) — Apache License 2.0, Copyright Google LLC
