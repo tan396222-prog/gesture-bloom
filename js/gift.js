@@ -7,7 +7,7 @@
 export const GIFT = {
   /** 她的名字（中文）与英文写法 */
   name: '莱拉',
-  nameEn: 'LAILA',
+  nameEn: 'LAYLA',
 
   /** 落款 */
   from: 'Tanlayla',

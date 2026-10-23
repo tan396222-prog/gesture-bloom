@@ -2,6 +2,8 @@
 
 # 🌹 手势控制绽放 · Bloom after dark
 
+### 💌 For Layla（莱拉）· Love you forever, Layla
+
 **张开手，花就开了。**
 
 [![在线体验](https://img.shields.io/badge/在线体验-loveyouforeverlayla.smartai888.com-ff8fb1?style=for-the-badge)](https://loveyouforeverlayla.smartai888.com)
@@ -14,7 +16,7 @@
 
 </div>
 
-这是我给莱拉做的 **120 天纪念日礼物**：一座只在夜里开花的手势花园。打开摄像头，对着屏幕张开五指，3D 花朵就在夜色里慢慢绽放；握拳，它又合成花苞；挥一挥手，换下一种花。开场是「我爱你，莱拉」，每朵花开到盛放时会浮现一句写给她的话，八朵花都看过之后，会打开一封信，花瓣从屏幕上飘落。
+这是我给女朋友 **Layla（莱拉）** 做的 **120 天纪念日礼物**：一座只在夜里开花的手势花园。打开摄像头，对着屏幕张开五指，3D 花朵就在夜色里慢慢绽放；握拳，它又合成花苞；挥一挥手，换下一种花。开场是「我爱你，莱拉」，每朵花开到盛放时会浮现一句写给她的话，八朵花都看过之后，会打开一封信，花瓣从屏幕上飘落。
 
 代码全部开源，你可以改几行文案，把它变成送给你自己的 TA 的礼物 💌
 
@@ -70,7 +72,7 @@
 ```js
 export const GIFT = {
   name: '莱拉',            // TA 的名字
-  nameEn: 'LAILA',
+  nameEn: 'LAYLA',
   from: 'Tanlayla',        // 落款
   days: 120,               // 在一起的天数
   startDate: null,         // 例如 '2026-06-26'；填了会按今天自动算天数（第一天算第 1 天），days 就不用了
